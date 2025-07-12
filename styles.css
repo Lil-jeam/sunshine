@@ -5,6 +5,12 @@
   --burgundy-pink: #b11243; /* Burgundy Pink */
   --accent-color: #ffc0cb; /* Light Pink */
 }
+
+html {
+  scroll-padding-top: 80px; /* Adjust to your header's height */
+}
+
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -269,6 +275,9 @@ footer {
 }
 
 @media only screen and (min-width: 601px) {
+  html {
+    scroll-padding-top: 80px; 
+  }
   #hamburger-icon {
     display: none;
   }
@@ -307,6 +316,9 @@ footer {
 }
 
 @media only screen and (min-width: 1440px) {
+  html {
+    scroll-padding-top: 200px; 
+  }
     header img {
       width: 250px;
       height: 250px;
