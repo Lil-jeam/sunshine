@@ -127,7 +127,7 @@ nav a {
   flex-direction: column;
   text-align: center;
   padding: 3rem 1rem;
-  background-image: url(Assets/making-hair-extensions.webp);
+  background-image: url(Assets\making-hair-extensions.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
