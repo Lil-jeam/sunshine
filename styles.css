@@ -218,7 +218,6 @@ section {
 
 .image-gallery img {
   max-width: 90%;
-  height: auto;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -362,6 +361,9 @@ footer {
     height: 200px;
   }
 
+  .image-gallery img{
+    height: 700px;
+  }
 
 }
 
@@ -369,6 +371,9 @@ footer {
 
   .hero {
     height: 300px;
+  }
+  .image-gallery img{
+    height: 900px;
   }
 }
 
@@ -387,5 +392,9 @@ header{
   .hero {
     margin-top: 110px;
     height: 300px;
+  }
+
+  .image-gallery img{
+    height: 900px;
   }
 }
