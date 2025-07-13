@@ -206,10 +206,38 @@ nav a {
 
 
 section {
-  padding: 2rem;
+  padding: 1rem 2rem 1rem 2rem;
   max-width: 800px;
   margin: auto;
 }
+
+.image-gallery {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.image-gallery img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.gallery-controls button {
+  margin: 1rem 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #d63384;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gallery-controls button:hover {
+  background-color: #b11243;
+}
+
 
 h2 {
   color: #c71585;
