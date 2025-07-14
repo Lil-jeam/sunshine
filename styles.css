@@ -366,8 +366,8 @@ footer {
   }
 
   #gallery-image {
-    height: 350px;
-    width: auto;
+    height: 450px;
+    width: 337.5px;
   }
 
 }
@@ -377,13 +377,10 @@ footer {
   .hero {
     height: 300px;
   }
-  .image-gallery img{
-    height: 900px;
-  }
 
   #gallery-image {
-    height: 500px;
-    width: auto;
+    height: 400px;
+    width: 300px;
   }
 }
 
@@ -397,8 +394,8 @@ header{
 }
 
   #gallery-image {
-    height: 500px;
-    width: auto;
+    height: 450px;
+    width: 337.5px;
   }
 
   .mobile-menu {
