@@ -1,6 +1,6 @@
 const menu = document.getElementById("mobile-menu");
 const icon = document.getElementById("hamburger-icon");
-
+const form = document.getElementById("booking-form");
 
 
 
@@ -52,4 +52,9 @@ function nextImage() {
 function prevImage() {
   currentIndex = (currentIndex - 1 + images.length) % images.length;
   showImage(currentIndex);
+}
+
+function showform() {
+  form.hidden = false
+  console.log("Form is now visible");
 }

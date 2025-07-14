@@ -259,6 +259,10 @@ ul {
   margin-top: 1rem;
 }
 
+#booking-form {
+  display: none;
+}
+
 .book-btn:hover {
   background-color: #c2185b;
 }
