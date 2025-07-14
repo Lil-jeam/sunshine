@@ -365,8 +365,9 @@ footer {
     height: 200px;
   }
 
-  .image-gallery img{
-    height: 700px;
+  #gallery-image {
+    height: 350px;
+    width: auto;
   }
 
 }
@@ -379,6 +380,11 @@ footer {
   .image-gallery img{
     height: 900px;
   }
+
+  #gallery-image {
+    height: 500px;
+    width: auto;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -389,6 +395,11 @@ header{
   height: 120px;
   gap: 1rem;
 }
+
+  #gallery-image {
+    height: 500px;
+    width: auto;
+  }
 
   .mobile-menu {
     display: none;
