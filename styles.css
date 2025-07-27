@@ -99,8 +99,19 @@ header h1 {
     z-index: 1000;
     pointer-events: auto;
     transform: translateY(0);
+    background-image: url('Assets/Hair Gallery/img1.jpg');
+    background-size: cover;
+    position: inherit;
     
-    
+}
+
+.mobile-menu.open::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5); /* Adjust opacity as needed */
+  z-index: 1;
+  pointer-events: none;
 }
 
 .mobile-menu {
@@ -307,6 +318,7 @@ footer {
     border-bottom: 2px solid gray;
     font-size: 1.5rem;
     text-transform: uppercase;
+    z-index: 2;
     
   }
 
