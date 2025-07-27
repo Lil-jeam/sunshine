@@ -18,8 +18,12 @@ body {
   background-color: #fff0f5;
   color: #333;
   overflow-x: hidden; /* Prevent horizontal scroll */
-  background-image: linear-gradient(to right, rgb(254, 255, 187), rgb(252, 159, 206));
 }
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
 
 header {
   background-color: white;
