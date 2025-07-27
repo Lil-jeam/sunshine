@@ -102,6 +102,7 @@ header h1 {
     background-image: url('Assets/Hair Gallery/img1.jpg');
     background-size: cover;
     position: inherit;
+    margin-top: -6px;
     
 }
 
