@@ -1,10 +1,8 @@
 /* styles.css */
 
 :root{
-  --Barbie-Pink: #E0218A; /* Hot Pink */
-  --secondary-color: #ff1493; /* Deep Pink */
-  --burgundy-pink: #b11243; /* Burgundy Pink */
-  --accent-color: #ffc0cb; /* Light Pink */
+  --background-color: #e9cfde; 
+  --accent-color: #480c75;
 }
 
 html {
@@ -15,7 +13,7 @@ html {
 body {
   margin: 0;
   font-family: 'Lora', sans-serif;
-  background-color: #e9cfde;
+  background-color: var(--background-color);
   color: #333;
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
@@ -26,7 +24,7 @@ h1, h2, h3 {
 
 
 header {
-  background-color: #e9cfde;
+  background-color: var(--background-color);
   padding: 1rem 2rem;
   display: flex;
   z-index: 999;
@@ -52,7 +50,7 @@ header {
 
 header h1 {
   margin: 0;
-  color: #480c75;
+  color: var(--accent-color);
   font-size: 2rem;
   font-family: 'My Soul', cursive;
   font-weight: 600;
@@ -69,7 +67,7 @@ header h1 {
 #hamburger-icon div{
     width: 35px;
     height: 3px;
-    background-color: #480c75;
+    background-color: var(--accent-color);
     margin: 3px 0;
     transition: 0.4s;
 }
@@ -145,7 +143,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: var(--burgundy-pink);
+  color: var(--accent-color);
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
 }
@@ -188,7 +186,7 @@ nav a {
 }
 
 .hero-text h2 {
-  color: #480c75;
+  color: var(--accent-color);
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
@@ -275,7 +273,7 @@ section {
 
 
 h2 {
-  color: #480c75;
+  color: var(--accent-color);
   margin-bottom: 1rem;
   font-size: 2rem;
 }
@@ -287,7 +285,7 @@ ul {
 
 .book-btn {
   display: inline-block;
-  background-color: #480c75;
+  background-color: var(--accent-color);
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
@@ -306,7 +304,7 @@ ul {
 
 footer {
   text-align: center;
-  background-color: var(--Barbie-Pink);
+  background-color: var(--accent-color);
   color: white;
   padding: 1rem;
   margin-top: 2rem;
