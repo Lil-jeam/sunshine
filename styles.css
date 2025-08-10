@@ -199,6 +199,23 @@ nav a {
   font-size: 1.2rem;
 }
 
+.about-section {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  display: block;
+  margin: 1rem auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
 .policy-section {
   background-color: var(--accent-color);
   padding: 1rem;
