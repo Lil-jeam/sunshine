@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Text Overlay</title>
+<style>
+  .container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .background {
+    display: block;
+    width: 100%;
+  }
+
+  .text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 16rem;
+    font-weight: bold;
+    color: white;
+    z-index: 1; /* Above background, below foreground */
+  }
+
+  .foreground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2; /* On top of everything */
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="Assets\making-hair-extensions.webp" alt="Background" class="background">
+  <div class="text">Want to look like the queen that you are?</div>
+  <img src="Assets\RUIDfbb5519b9fc646fba0c4afe0a2e5cabc.png" alt="Foreground" class="foreground">
+</div>
+
+</body>
+</html>
