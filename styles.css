@@ -1,8 +1,8 @@
 /* styles.css */
 
 :root{
-  --background-color: #e2c5d7; 
-  --accent-color: #4c1b1e;
+  --background-color: #eddcdc; 
+  --accent-color: #4e2a31;
 }
 
 html {
@@ -260,7 +260,7 @@ section {
   margin: 1rem 0.5rem;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  background-color: #480c75;
+  background-color: var(--accent-color);
   color: white;
   border: none;
   border-radius: 5px;
