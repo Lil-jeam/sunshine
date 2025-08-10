@@ -1,8 +1,8 @@
 /* styles.css */
 
 :root{
-  --background-color: #e9cfde; 
-  --accent-color: #480c75;
+  --background-color: #e2c5d7; 
+  --accent-color: #4c1b1e;
 }
 
 html {
@@ -218,7 +218,7 @@ nav a {
 
 
 .policy-section {
-  background-color: var(--accent-color);
+  background-color: #ffc0cb;
   padding: 1rem;
   margin: 2rem 0;
   border-radius: 10px;
