@@ -4,6 +4,17 @@ const form = document.getElementById("booking-form");
 const header = document.querySelector("header");
 
 
+
+
+
+
+// Toggle mobile menu
+function toggleMobileMenu() {
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+  header.style.backgroundColor = "var(--background-color)";
+}
+
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
   const about = document.querySelector("#about");
@@ -18,15 +29,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
-
-
-// Toggle mobile menu
-function toggleMobileMenu() {
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
-  header.classList.toggle("open");
-}
 
 // Toggle mobile menu for button click
 function toggleMobileMenubtn() {

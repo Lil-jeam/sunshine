@@ -39,10 +39,6 @@ header {
 
 }
 
-header.open{
-    background-color: var(--background-color);
-
-}
 
 .plain-header {
   display: flex;
