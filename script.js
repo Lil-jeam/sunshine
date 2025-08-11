@@ -1,7 +1,7 @@
 const menu = document.getElementById("mobile-menu");
 const icon = document.getElementById("hamburger-icon");
 const form = document.getElementById("booking-form");
-
+const header = document.querySelector("header");
 
 
 
@@ -9,6 +9,7 @@ const form = document.getElementById("booking-form");
 function toggleMobileMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
+  header.classList.toggle("open");
 }
 
 // Toggle mobile menu for button click

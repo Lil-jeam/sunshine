@@ -24,10 +24,10 @@ h1, h2, h3 {
 
 
 header {
-  background-color: var(--background-color);
+  background-color: rgba(78, 42, 49, 0.3);
   padding: 1rem 2rem;
   display: flex;
-  z-index: 999;
+  z-index: 998;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -36,6 +36,11 @@ header {
   left: 0;      
   top: 0;      
   box-sizing: border-box;
+
+}
+
+header.open{
+    background-color: var(--background-color);
 
 }
 
@@ -163,7 +168,6 @@ nav a {
   background-position: center;
   position: relative;
   max-width: 100%;
-  margin-top: 74.4px;
 }
 
 .hero::before {
@@ -381,10 +385,10 @@ footer {
     flex-direction: row;
     align-items: center;
   }
-  header {
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+
+  header{
+    flex-wrap: nowrap;
+    gap: 0.5rem;
   }
 
   .hero {
@@ -416,7 +420,7 @@ footer {
     scroll-padding-top: 100px; 
   }
 header{
-  height: 120px;
+  height: 80px;
   gap: 1rem;
 }
 
@@ -429,7 +433,7 @@ header{
     display: none;
   }
   .hero {
-    margin-top: 110px;
+    margin-top: 70px;
     height: 300px;
   }
 
