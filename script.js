@@ -4,6 +4,22 @@ const form = document.getElementById("booking-form");
 const header = document.querySelector("header");
 
 
+window.addEventListener("scroll", function () {
+  const header = document.querySelector("header");
+  const about = document.querySelector("#about");
+
+  const headerHeight = header.offsetHeight;
+  const aboutTop = about.getBoundingClientRect().top;
+
+  if (aboutTop <= headerHeight) {
+    header.style.backgroundColor = "var(--background-color)";
+  } else {
+    header.style.backgroundColor = "rgba(78, 42, 49, 0.3)";
+  }
+});
+
+
+
 
 // Toggle mobile menu
 function toggleMobileMenu() {
