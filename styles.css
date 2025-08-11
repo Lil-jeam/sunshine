@@ -276,6 +276,55 @@ ul {
   margin-bottom: 1.5rem;
 }
 
+.accordion {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background: #f8f8f8;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.accordion-header img {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+.accordion-icon {
+  transition: transform 0.3s ease;
+}
+
+.accordion-header.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  background: #fff;
+  padding: 0 10px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-body.open {
+  padding: 10px;
+}
+
+
 .book-btn {
   display: inline-block;
   background-color: #ff6600;

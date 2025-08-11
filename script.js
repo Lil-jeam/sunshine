@@ -29,6 +29,32 @@ window.addEventListener("scroll", function () {
   }
 });
 
+document.querySelectorAll('.accordion-header').forEach(header => {
+  header.addEventListener('click', function () {
+    const body = this.nextElementSibling;
+
+    // Close other accordions
+    document.querySelectorAll('.accordion-body').forEach(otherBody => {
+      if (otherBody !== body) {
+        otherBody.style.maxHeight = null;
+        otherBody.previousElementSibling.classList.remove("active");
+        otherBody.classList.remove("open");
+      }
+    });
+
+    if (body.style.maxHeight) {
+      body.style.maxHeight = null;
+      this.classList.remove("active");
+      body.classList.remove("open");
+    } else {
+      body.style.maxHeight = body.scrollHeight + "px";
+      this.classList.add("active");
+      body.classList.add("open");
+    }
+  });
+});
+
+
 
 // Toggle mobile menu for button click
 function toggleMobileMenubtn() {
