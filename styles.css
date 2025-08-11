@@ -170,7 +170,7 @@ nav a {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.4);
   z-index: 1;
 }
 
@@ -261,7 +261,7 @@ section {
 }
 
 .gallery-controls button:hover {
-  background-color: #d57488;
+  background-color: #b36172;
 }
 
 
@@ -292,7 +292,7 @@ ul {
 }
 
 .book-btn:hover {
-  background-color: #c2185b;
+  background-color: #b36172;
 }
 
 footer {
