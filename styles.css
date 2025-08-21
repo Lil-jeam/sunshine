@@ -51,6 +51,7 @@ header {
 
 header h1 {
   margin: 0;
+  padding-left: 3rem;
   color: var(--accent-color);
   font-size: 1.5rem;
   font-family: 'My Soul', cursive;
@@ -173,11 +174,12 @@ nav a {
 .hero-images{
   display: flex;
   gap: 7rem;
-  margin-top: -0.2rem;
+  margin-top: -0.2rem; /* blur strength */
 }
 
 .hero-images1{
   transform: rotate(-15deg);
+  display: block;
 }
 
 .hero-images2{
@@ -185,6 +187,9 @@ nav a {
   gap: 3rem;
   transform: rotate(15deg);
 }
+
+  
+
 
 /*
 .hero::before {
@@ -211,6 +216,8 @@ nav a {
 
 .hero-text h2{
   font-family: 'Bodoni Moda', serif;
+  margin-top: -4rem;
+  color: #2c2c2b;
 } 
 
 .hero-text p {
