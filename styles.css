@@ -160,8 +160,9 @@ nav a {
   text-align: center;
   padding: 0rem 1rem;
   position: relative;
-  max-width: 100%;
   min-height: 200px;
+  max-width: 100vw; 
+  overflow: hidden;
 }
 
 .hero img {
@@ -174,7 +175,8 @@ nav a {
 .hero-images{
   display: flex;
   gap: 7rem;
-  margin-top: -0.2rem; /* blur strength */
+  margin-top: -0.2rem;
+  
 }
 
 .hero-images1{
