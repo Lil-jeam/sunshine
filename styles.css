@@ -51,9 +51,9 @@ header {
 
 header h1 {
   margin: 0;
-  padding-left: 3rem;
+  padding-left: 2rem;
   color: var(--accent-color);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family: 'My Soul', cursive;
   font-weight: 600;
   font-style: normal;
