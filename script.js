@@ -23,9 +23,9 @@ window.addEventListener("scroll", function () {
   const aboutTop = about.getBoundingClientRect().top;
 
   if (aboutTop <= headerHeight) {
-    header.style.backgroundColor = "var(--background-color)";
+    header.style.backgroundColor = "rgba(78, 42, 49, 0.3)";    
   } else {
-    header.style.backgroundColor = "rgba(78, 42, 49, 0.3)";
+    header.style.backgroundColor = "var(--background-color)";    
   }
 });
 
