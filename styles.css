@@ -407,7 +407,7 @@ ul {
 .accordion-header {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   background: var(--secondary);
   border: none;
@@ -428,6 +428,9 @@ ul {
 
 .accordion-icon {
   transition: transform 0.3s ease;
+  margin-left: 1.5rem;
+  margin-right: 0;
+  margin-inline-start: auto;
 }
 
 .accordion-header.active .accordion-icon {
