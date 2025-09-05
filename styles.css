@@ -1,8 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
 /* styles.css */
 
-:root{
-  --background-color: #eddcdc; 
-  --accent-color: #4e2a31;
+:root {
+  --background: #f5f1e6;
+  --foreground: #4a3f35;
+  --card: #fffcf5;
+  --card-foreground: #4a3f35;
+  --popover: #fffcf5;
+  --popover-foreground: #4a3f35;
+  --primary: #a67c52;
+  --primary-foreground: #ffffff;
+  --secondary: #e2d8c3;
+  --secondary-foreground: #5c4d3f;
+  --muted: #ece5d8;
+  --muted-foreground: #7d6b56;
+  --accent: #d4c8aa;
+  --accent-foreground: #4a3f35;
+  --destructive: #b54a35;
+  --destructive-foreground: #ffffff;
+  --border: #dbd0ba;
+  --input: #dbd0ba;
+  --ring: #a67c52;
+  --chart-1: #a67c52;
+  --chart-2: #8d6e4c;
+  --chart-3: #735a3a;
+  --chart-4: #b3906f;
+  --chart-5: #c0a080;
+  --sidebar: #ece5d8;
+  --sidebar-foreground: #4a3f35;
+  --sidebar-primary: #a67c52;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #d4c8aa;
+  --sidebar-accent-foreground: #4a3f35;
+  --sidebar-border: #dbd0ba;
+  --sidebar-ring: #a67c52;
+  --font-sans: 'Archivo Black', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --font-script: 'Dancing Script', cursive;
+  --font-display: 'Sacramento', cursive;
+  --radius: 0.25rem;
+  --shadow-2xs: 2px 3px 5px 0px hsl(28 13% 20% / 0.06);
+  --shadow-xs: 2px 3px 5px 0px hsl(28 13% 20% / 0.06);
+  --shadow-sm: 2px 3px 5px 0px hsl(28 13% 20% / 0.12), 2px 1px 2px -1px hsl(28 13% 20% / 0.12);
+  --shadow: 2px 3px 5px 0px hsl(28 13% 20% / 0.12), 2px 1px 2px -1px hsl(28 13% 20% / 0.12);
+  --shadow-md: 2px 3px 5px 0px hsl(28 13% 20% / 0.12), 2px 2px 4px -1px hsl(28 13% 20% / 0.12);
+  --shadow-lg: 2px 3px 5px 0px hsl(28 13% 20% / 0.12), 2px 4px 6px -1px hsl(28 13% 20% / 0.12);
+  --shadow-xl: 2px 3px 5px 0px hsl(28 13% 20% / 0.12), 2px 8px 10px -1px hsl(28 13% 20% / 0.12);
+  --shadow-2xl: 2px 3px 5px 0px hsl(28 13% 20% / 0.30);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+}
+
+.dark {
+  --background: #2d2621;
+  --foreground: #ece5d8;
+  --card: #3a322c;
+  --card-foreground: #ece5d8;
+  --popover: #3a322c;
+  --popover-foreground: #ece5d8;
+  --primary: #c0a080;
+  --primary-foreground: #2d2621;
+  --secondary: #4a4039;
+  --secondary-foreground: #ece5d8;
+  --muted: #3a322c;
+  --muted-foreground: #c5bcac;
+  --accent: #59493e;
+  --accent-foreground: #ece5d8;
+  --destructive: #b54a35;
+  --destructive-foreground: #ffffff;
+  --border: #4a4039;
+  --input: #4a4039;
+  --ring: #c0a080;
+  --chart-1: #c0a080;
+  --chart-2: #b3906f;
+  --chart-3: #a67c52;
+  --chart-4: #8d6e4c;
+  --chart-5: #735a3a;
+  --sidebar: #2d2621;
+  --sidebar-foreground: #ece5d8;
+  --sidebar-primary: #c0a080;
+  --sidebar-primary-foreground: #2d2621;
+  --sidebar-accent: #59493e;
+  --sidebar-accent-foreground: #ece5d8;
+  --sidebar-border: #4a4039;
+  --sidebar-ring: #c0a080;
+  --radius: 0.25rem;
+  --shadow-2xs: 2px 3px 5px 0px hsl(28 13% 20% / 0.06);
+  --shadow-xs: 2px 3px 5px 0px hsl(28 13% 20% / 0.06);
+  --shadow-sm: 2px 3px 5px 0px hsl(28 13% 20% / 0.12), 2px 1px 2px -1px hsl(28 13% 20% / 0.12);
+  --shadow: 2px 3px 5px 0px hsl(28 13% 20% / 0.12), 2px 1px 2px -1px hsl(28 13% 20% / 0.12);
+  --shadow-md: 2px 3px 5px 0px hsl(28 13% 20% / 0.12), 2px 2px 4px -1px hsl(28 13% 20% / 0.12);
+  --shadow-lg: 2px 3px 5px 0px hsl(28 13% 20% / 0.12), 2px 4px 6px -1px hsl(28 13% 20% / 0.12);
+  --shadow-xl: 2px 3px 5px 0px hsl(28 13% 20% / 0.12), 2px 8px 10px -1px hsl(28 13% 20% / 0.12);
+  --shadow-2xl: 2px 3px 5px 0px hsl(28 13% 20% / 0.30);
 }
 
 html {
@@ -12,19 +106,19 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Lora', sans-serif;
-  background-color: var(--background-color);
-  color: #333;
+  font-family: 'Lora', serif;
+  background-color: var(--background);
+  color: var(--foreground);
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 h1, h2, h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-serif);
 }
 
 /* test */
 header {
-  background-color: rgba(78, 42, 49, 0);
+  background-color: transparent;
   padding: 1rem 2rem;
   display: flex;
   z-index: 998;
@@ -51,9 +145,9 @@ header {
 
 header h1 {
   margin: 0;
-  color: var(--accent-color);
-  font-size: 1.5rem;
-  font-family: 'My Soul', cursive;
+  color: var(--primary);
+  font-size: 2.5rem;
+  font-family: var(--font-display);
   font-weight: 500;
   font-style: normal;
 }
@@ -68,7 +162,7 @@ header h1 {
 #hamburger-icon div{
     width: 35px;
     height: 3px;
-    background-color: var(--accent-color);
+    background-color: var(--primary);
     margin: 3px 0;
     transition: 0.4s;
 }
@@ -120,7 +214,7 @@ header h1 {
     left: 0;
     width: 100%;
     height: calc(100vh - 70px);
-    background: white;
+    background: var(--card);
     z-index: 5;
     opacity: 0;
     pointer-events: none;
@@ -145,9 +239,10 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: var(--accent-color);
+  color: var(--primary);
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-sans);
+  letter-spacing: 0.1em;
 }
 
 .hero {
@@ -191,20 +286,21 @@ nav a {
 
 
 .hero-text {
-  color: #392126;
+  color: var(--foreground);
   position: relative;
   z-index: 2;
 }
 
 
 .hero-text h2{
-  font-family: 'Bodoni Moda', serif;
+  font-family: var(--font-script);
   margin-top: -4rem;
-  color: #2c2c2b;
+  color: var(--foreground);
+  font-size: 3rem;
 } 
 
 .hero-text p {
-  color: white;
+  color: var(--foreground);
   font-size: 1.2rem;
 }
 
@@ -232,14 +328,15 @@ nav a {
 
 
 .policy-section {
-  background-color: #fdf2f2;
+  background-color: var(--card);
   padding: 1rem;
   margin: 2rem 0;
-  border-radius: 10px;
+  border-radius: var(--radius-lg);
   display: flex;
   flex-direction: row;
   align-items: center;
-
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
 }
 
 .policy-section img {
@@ -266,28 +363,30 @@ section {
 
 .image-gallery img {
   max-width: 90%;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
 }
 
 .gallery-controls button {
   margin: 1rem 0.5rem;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  background-color: var(--accent-color);
-  color: white;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
   border: none;
-  border-radius: 5px;
+  border-radius: var(--radius-md);
   cursor: pointer;
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease;
 }
 
 .gallery-controls button:hover {
-  background-color: #b36172;
+  background-color: var(--accent);
 }
 
 
 h2 {
-  color: var(--accent-color);
+  color: var(--primary);
   margin-bottom: 1rem;
   font-size: 2.4rem;
 }
@@ -298,10 +397,11 @@ ul {
 }
 
 .accordion {
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
   margin-bottom: 10px;
   overflow: hidden;
+  background-color: var(--card);
 }
 
 .accordion-header {
@@ -309,7 +409,7 @@ ul {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  background: #f8f8f8;
+  background: var(--secondary);
   border: none;
   outline: none;
   cursor: pointer;
@@ -317,6 +417,7 @@ ul {
   text-align: left;
   font-size: 1.1rem;
   font-weight: bold;
+  color: var(--secondary-foreground);
 }
 
 .accordion-header img {
@@ -336,7 +437,7 @@ ul {
 .accordion-body {
   max-height: 0;
   overflow: hidden;
-  background: #fff;
+  background: var(--card);
   padding: 0 10px;
   transition: max-height 0.3s ease, padding 0.3s ease;
 }
@@ -348,13 +449,15 @@ ul {
 
 .book-btn {
   display: inline-block;
-  background-color: #ff6600;
-  color: white;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
   padding: 0.75rem 1.5rem;
-  border-radius: 5px;
+  border-radius: var(--radius-md);
   text-decoration: none;
   font-weight: bold;
   margin-top: 1rem;
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease;
 }
 
 #booking-form {
@@ -362,13 +465,14 @@ ul {
 }
 
 .book-btn:hover {
-  background-color: #f4e7c5;
+  background-color: var(--accent);
+  color: var(--accent-foreground);
 }
 
 footer {
   text-align: center;
-  background-color: var(--accent-color);
-  color: white;
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
   padding: 1rem;
   margin-top: 2rem;
   font-size: 0.9rem;
@@ -410,7 +514,7 @@ footer {
   }
 
   nav a {
-    color: var(--accent-color);
+    color: var(--primary);
   }
   
   nav ul {
